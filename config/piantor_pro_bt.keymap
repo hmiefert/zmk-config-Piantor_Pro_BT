@@ -42,14 +42,14 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | LCTRL| ESC |     |     |     |     |   | LFT | DWN |  UP | RGT |     | RCTRL|
-// | LSHFT| CLCK|     |     |     |     |   | HOME|PGDWN| PGUP| END |     | RSHFT|
+// | LSHFT| CLCK|     |     |     | RGB |   | HOME|PGDWN| PGUP| END |     | RSHFT|
 //                    | LALT| LY1 | SPC |   | ENT | LY2 | MENU|
                         display-name = "Layer 1";
                         bindings = <
-   &kp TAB   &kp N1   &kp N2 &kp N3 &kp N4 &kp N5     &kp N6   &kp N7    &kp N8    &kp N9    &kp N0 &kp BSPC
-   &kp LCTRL &kp ESC  &none  &none  &none  &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &kp RCTRL
-   &kp LSHFT &kp CAPS &none  &none  &none  &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &kp RSHFT
-           	         &kp LALT &trans &kp SPACE          &kp RET &trans &kp K_CMENU
+   &kp TAB   &kp N1   &kp N2 &kp N3 &kp N4 &kp N5               &kp N6   &kp N7    &kp N8    &kp N9    &kp N0 &kp BSPC
+   &kp LCTRL &kp ESC  &none  &none  &none  &none                &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &kp RCTRL
+   &kp LSHFT &kp CAPS &none  &none  &none  &rgb_ug RGB_TOG      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &kp RSHFT
+           	         &kp LALT &trans &kp SPACE                      &kp RET &trans &kp K_CMENU
                         >;
                 };
 
