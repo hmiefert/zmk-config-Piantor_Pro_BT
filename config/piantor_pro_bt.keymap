@@ -17,6 +17,34 @@
     chosen {
         zmk,physical-layout = &default_layout;
     };
+
+    macros {
+        bt0_purple: bt0_purple {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&rgb_color RGB_PURPLE>;
+        };
+        bt1_blue: bt1_blue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&rgb_color RGB_BLUE>;
+        };
+        bt2_white: bt2_white {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&rgb_color RGB_WHITE>;
+        };
+        bt3_red: bt3_red {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&rgb_color RGB_RED>;
+        };
+        bt4_yellow: bt4_yellow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&rgb_color RGB_YELLOW>;
+        };
+    };
 };
 
 / {
@@ -78,7 +106,7 @@
                         bindings = <
    &kp F12    &kp F1         &kp F2         &kp F3       &kp F4          &kp F5     &kp F6         &kp F7         &kp F8       &kp F9          &kp F10      &kp F11
    &mkp MB5   &mkp MB4       &mkp MB2       &mkp MB3     &mkp MB1        &none      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none        &none
-   &bt BT_CLR &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none      &none          &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4 
+   &bt BT_CLR &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none      &none          &bt0_purple    &bt1_blue    &bt2_white      &bt3_red     &bt4_yellow
                     	                            &kp LALT &trans &kp SPACE         &kp RET &trans &kp RGUI
                         >;
                 };
