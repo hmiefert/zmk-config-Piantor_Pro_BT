@@ -22,27 +22,27 @@
         bt0_purple: bt0_purple {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&rgb_ug RGB_COLOR_HSB(128,100,100)>;
+            bindings = <&bt BT_SEL 0>, <&rgb_ug RGB_COLOR_HSB(280,100,100)>;
         };
         bt1_blue: bt1_blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&rgb_ug RGB_COLOR_HSB(128,100,100)>;
+            bindings = <&bt BT_SEL 1>, <&rgb_ug RGB_COLOR_HSB(240,100,100)>;
         };
         bt2_white: bt2_white {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&rgb_ug RGB_COLOR_HSB(128,100,100)>;
+            bindings = <&bt BT_SEL 2>, <&rgb_ug RGB_COLOR_HSB(0,0,100)>;
         };
         bt3_red: bt3_red {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3>, <&rgb_ug RGB_COLOR_HSB(128,100,100)>;
+            bindings = <&bt BT_SEL 3>, <&rgb_ug RGB_COLOR_HSB(0,100,100)>;
         };
         bt4_yellow: bt4_yellow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&rgb_ug RGB_COLOR_HSB(128,100,100)>;
+            bindings = <&bt BT_SEL 4>, <&rgb_ug RGB_COLOR_HSB(50,100,100)>;
         };
     };
 };
