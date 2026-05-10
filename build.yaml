@@ -7,9 +7,12 @@
 #
 ---
 include:
-  - board: piantor_pro_bt_left
+  - board: seeeduino_xiao_ble
+    shield: piantor_pro_bt_dongle
     snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    artifact-name: piantor_pro_bt_dongle
+  - board: piantor_pro_bt_left
     shield: nice_view
   - board: piantor_pro_bt_right
     shield: nice_view
-    snippet: studio-rpc-usb-uart

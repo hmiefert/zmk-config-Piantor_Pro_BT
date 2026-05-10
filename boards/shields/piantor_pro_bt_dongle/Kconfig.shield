@@ -1,0 +1,2 @@
+config SHIELD_PIANTOR_PRO_BT_DONGLE
+    def_bool $(shields_list_contains,piantor_pro_bt_dongle)
