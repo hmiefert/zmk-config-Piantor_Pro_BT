@@ -1,4 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "piantor_pro_bt-layouts.dtsi"
+
+&default_layout {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
